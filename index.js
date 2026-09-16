@@ -1,0 +1,1 @@
+console.log("Inicialización del proyecto de Node.js");
