@@ -5,7 +5,8 @@ const API_URL = "https://fakestoreapi.com/products";
 async function getProducts() {
   const response = await fetch(API_URL);
   const products = await response.json();
-
+  
+  console.log(`Total de productos ${products.length}:`);
   console.log(JSON.stringify(products, null, 2));
 }
 
@@ -13,6 +14,7 @@ async function getProductById(productId) {
   const response = await fetch(`${API_URL}/${productId}`);
   const product = await response.json();
 
+  console.log(`Detalle del producto ${product.title}:`);
   console.log(JSON.stringify(product, null, 2));
 }
 
