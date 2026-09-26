@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/Nataliasoledadnavarro/nodejs_26226-_pre_entrega_natalia_navarro/issues"
   },
-  "homepage": "https://github.com/Nataliasoledadnavarro/nodejs_26226-_pre_entrega_natalia_navarro#readme"
+  "homepage": "https://github.com/Nataliasoledadnavarro/nodejs_26226-_pre_entrega_natalia_navarro#readme",
+  "devDependencies": {
+    "chai": "^5.3.3",
+    "mocha": "^11.7.5"
+  }
 }

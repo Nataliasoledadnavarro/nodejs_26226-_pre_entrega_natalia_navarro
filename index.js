@@ -6,7 +6,7 @@ async function getProducts() {
   const products = await response.json();
 
   console.log(`Total de productos: ${products.length}`);
-  console.log(JSON.stringify(products, null, 2));
+  console.log(products);
 }
 
 async function getProductById(productId) {
@@ -14,7 +14,7 @@ async function getProductById(productId) {
   const product = await response.json();
 
   console.log(`Detalle del producto ${productId}:`);
-  console.log(JSON.stringify(product, null, 2));
+  console.log(product);
 }
 
 async function createProduct(title, price, category) {
@@ -32,7 +32,7 @@ async function createProduct(title, price, category) {
 
   const product = await response.json();
   console.log(`Producto agregado con id: ${product.id}`);
-  console.log(JSON.stringify(product, null, 2));
+  console.log(product);
 }
 
 async function deleteProduct(productId) {
@@ -42,7 +42,7 @@ async function deleteProduct(productId) {
 
   const result = await response.json();
   console.log(`Producto eliminado: ${productId}`);
-  console.log(JSON.stringify(result, null, 2));
+  console.log(result);
 }
 
 async function main() {
